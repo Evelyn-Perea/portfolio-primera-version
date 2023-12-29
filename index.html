@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>PEREA EVELYN | Frontend Developer</title>
+  </head>
+
+  <body>
+   
+    <nav>
+      <h1>PEREA EVELYN</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+    
+   
+    <section class="hero" id="about">
+      <img
+        src="assets/images/dev-frontend.svg"
+        alt=""
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">SOBRE MÍ</h2>
+        <p class="bio-text">
+          Desarrolladora Frontend con conocimientos en HTML, 
+          CSS, Responsive Design y JavaScript. 
+          <br>
+          Actualmente especializándome en Diseño UX/UI y Java Script.
+        </p>
+      </div>
+    </section>
+
+
+    
+    <section class="skills" id="skills">
+      <h2 class="skill-header">SKILLS</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/images/logo-html5.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/images/logo-css3.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/images/logo-js.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/images/logo_github.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/images/ux-ui.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="projects-title">PROYECTOS</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/ada-itw.jpg"
+            alt="ada-itw"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Ada ITW</h3>
+          <p class="project-details">
+            Maquetación Web de Ada ITW hecha con HTML y CSS. 
+          </p>
+          <a href="https://evelyn-perea.github.io/maquetacion-ada/" target="_blank" class="project-link">Ver proyecto</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/calculadora.jpg"
+            alt="calculadora"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Calculadora</h3>
+          <p class="project-details">
+            Calculadora hecha con JS, HTML Y CSS para integrar y repasar conceptos de JavaScript.
+          </p>
+          <a href="https://evelyn-perea.github.io/calculadora-html/" target="_blank" class="project-link">Ver proyecto</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/restaurante.jpg"
+            alt="ill-matterello"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Il Matterello</h3>
+          <p class="project-details">
+            Construcción de página web para un restaurante de comida italiana, con HTMl, CSS y JS.
+          </p>
+          <a href="https://evelyn-perea.github.io/proyecto-restaurante-ill-matterello/" target="_blank" class="project-link">Ver proyecto</a>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="contact" id="contact">
+      <h2>CONTACTO</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div class="form-control">
+              <label for="name">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/evelyn-perea/" target="_blank"
+        ><img
+          src="assets/icons/linkedin.svg"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/Evelyn-Perea" target="_blank"
+        ><img src="assets/icons/git-logo.png" alt="Github" class="socicon"
+      /></a>
+    </div>
+  
+    <footer>
+      <p class="copy">&copy; Copyright 2023</p>
+      <p class="copy">Evelyn Perea</a></p>
+    </footer>
+
+    
+    <script src="assets/js/app.js"></script>
+
+    
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
